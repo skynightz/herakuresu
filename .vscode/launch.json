@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "herakuresu",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+      },
+      "runtimeArgs": ["--no-sandbox", "--remote-debugging-port=9223", "."],
+      "program": "${workspaceRoot}/node_modules/xcraft-core-host/bin/host",
+      "protocol": "inspector",
+      "outputCapture": "std",
+      "env": {
+        "GOBLINS_APP": "herakuresu",
+        "NODE_ENV": "development",
+        "XCRAFT_LOG": "2"
+      }
+    }
+  ]
+}
