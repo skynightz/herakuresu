@@ -1,0 +1,11 @@
+{
+  "npmInstallArgs": [],
+  "modules": [
+    "./lib/goblin-herakuresu"
+  ],
+  "exclude": ["babel-env", "generic-js-env", "mai-chai"],
+  "scripts": {
+    "presc": {},
+    "postsc": {}
+  }
+}

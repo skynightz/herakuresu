@@ -1,0 +1,31 @@
+{
+  "name": "goblin-herakuresu",
+  "version": "0.0.1",
+  "description": "A goblin's app",
+  "author": "",
+  "license": "MIT",
+  "config": {
+    "xcraft": {
+      "commands": true
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "goblin-client": "^1.0.0",
+    "goblin-desktop": "^1.0.0",
+    "goblin-gadgets": "^1.0.0",
+    "goblin-elasticsearch": "^1.0.0",
+    "goblin-rethink": "^1.0.0",
+    "goblin-warehouse": "^1.0.0",
+    "goblin-workshop": "^1.0.0",
+    "xcraft-core-goblin": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.4",
+    "xcraft-dev-prettier": "^2.0.0",
+    "xcraft-dev-rules": "^2.0.0"
+  },
+  "prettier": "xcraft-dev-prettier"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "herakuresu",
+  "versionFrom": "herakuresu",
+  "description": "herakuresu application",
+  "appCompany": "herakuresu",
+  "appId": "herakuresu",
+  "xcraft": {
+    "xcraft-core-host": {
+      "mainQuest": "herakuresu.boot",
+      "secondaryQuest": "client.start"
+    },
+    "xcraft-core-server": {
+      "userModulesFilter": "^goblin-",
+      "modules": ["goblin-herakuresu", "goblin-client"]
+    },
+    "goblin-client": {
+      "mainGoblin": "herakuresu",
+      "mainGoblinModule": "goblin-herakuresu",
+      "contextId": "herakuresu",
+      "themeContexts": ["theme"],
+      "useConfigurator": false,
+      "useLogin": false
+    },
+    "goblin-workshop": {
+      "entityStorageProvider": "goblin-rethink"
+    }
+  }
+}
